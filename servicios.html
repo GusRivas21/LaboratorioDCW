@@ -8,16 +8,28 @@
 </head>
 <body class="flex flex-col min-h-screen">
 
-    <header class="bg-black text-white p-2 flex justify-between items-center">
-        <div class="flex items-center space-x-4 text-xl font-bold">
-            <img src="./src/img/logo.jpeg" alt="Logo" class="h-30 max-h-28">
-            <p class="text-white text-3xl">Servicios</p>
+    <header class="bg-black p-4 flex justify-between items-center tex text-amber-50">
+        <div class="flex items-center space-x-3">
+            <img src="./src/img/logo.jpeg" alt="Logo" class="h-16 sm:h-24">
+            <p class="text-2xl sm:text-3xl font-bold">Sobre Nosotros</p>
         </div>
-        <nav>
-            <a href="/" class="px-6 py-4 bg-black rounded-lg hover:bg-orange-700 mx-2">Inicio</a>
-            <a href="/sobre_nosotros.html" class="px-6 py-4 bg-black rounded-lg hover:bg-orange-700">Sobre Nosotros</a>
+
+        <nav class="hidden sm:flex space-x-4">
+            <a href="./inicio.html" class="px-4 py-2 hover:text-yellow-600">Inicio</a>
+            <a href="/servicios.html" class="px-4 py-2 hover:text-yellow-600">Servicios</a>
+        </nav>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="sm:hidden cursor-pointer p-2 bg-orange-700 rounded">
+            ☰
+        </label>
+
+        <nav class="absolute top-16 left-0 w-full hidden peer-checked:flex flex-col items-center bg-black p-4 sm:hidden">
+            <a href="/" class="w-full text-center py-2 hover:bg-gray-700">Inicio</a>
+            <a href="/servicios.html" class="w-full text-center py-2 hover:bg-gray-700">Servicios</a>
         </nav>
     </header>
+
 
     <section class="bg-[url(https://static.vecteezy.com/system/resources/thumbnails/022/576/372/small/image-of-wooden-table-in-front-of-abstract-blurred-background-of-resturant-lights-wood-table-top-on-blur-of-lighting-in-night-cafe-restaurant-background-selective-focus-generative-ai-photo.jpg)] bg-cover bg-center bg-fixed flex-grow py-10">
         <main class="container mx-auto p-10">

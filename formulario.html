@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="bg-black p-4 flex justify-between items-center tex text-amber-50">
+        <div class="flex items-center space-x-3">
+            <img src="./src/img/logo.jpeg" alt="Logo" class="h-16 sm:h-24">
+            <p class="text-2xl sm:text-3xl font-bold">Sobre Nosotros</p>
+        </div>
+
+        <nav class="hidden sm:flex space-x-4">
+            <a href="./inicio.html" class="px-4 py-2 hover:text-yellow-600">Inicio</a>
+            <a href="/servicios.html" class="px-4 py-2 hover:text-yellow-600">Servicios</a>
+        </nav>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="sm:hidden cursor-pointer p-2 bg-orange-700 rounded">
+            ☰
+        </label>
+
+        <nav class="absolute top-16 left-0 w-full hidden peer-checked:flex flex-col items-center bg-black p-4 sm:hidden">
+            <a href="/" class="w-full text-center py-2 hover:bg-gray-700">Inicio</a>
+            <a href="/servicios.html" class="w-full text-center py-2 hover:bg-gray-700">Servicios</a>
+        </nav>
+    </header>
+
+    <section class="flex items-center justify-center min-h-screen bg-gray-700">
+        <div class="w-full max-w-lg p-8 rounded-lg shadow-lg bg-gray-400">
+            <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">Ordena tu Comida</h2>
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1">Nombre</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-orange-200 focus:outline-none" placeholder="Tu nombre">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1">Selecciona tu comida</label>
+                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-orange-200 focus:outline-none">
+                        <option value="pizza">Pizza</option>
+                        <option value="hamburguesa">Hamburguesa</option>
+                        <option value="sushi">Sushi</option>
+                        <option value="tacos">Tacos</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1">Cantidad</label>
+                    <input type="number" min="1" class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-orange-200 focus:outline-none" placeholder="Cantidad">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1">Dirección de entrega</label>
+                    <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-orange-200 focus:outline-none" rows="3" placeholder="Tu dirección"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-black text-white py-3 rounded-lg hover:bg-orange-700 transition">
+                    Hacer Pedido
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
