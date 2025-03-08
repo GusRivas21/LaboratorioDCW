@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Restaurante</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="bg-black p-4 flex justify-between items-center tex text-amber-50">
+        <div class="flex items-center space-x-3">
+            <img src="./img/logo.jpeg" alt="Logo" class="h-16 sm:h-24">
+            <p class="text-2xl sm:text-3xl font-bold">Sobre Nosotros</p>
+        </div>
+
+        <nav class="hidden sm:flex space-x-4">
+            <a href="./index.html" class="px-4 py-2 hover:text-yellow-600">Inicio</a>
+            <a href="/servicios.html" class="px-4 py-2 hover:text-yellow-600">Servicios</a>
+        </nav>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="sm:hidden cursor-pointer p-2 bg-orange-700 rounded">
+            ☰
+        </label>
+
+        <nav class="absolute top-16 left-0 w-full hidden peer-checked:flex flex-col items-center bg-black p-4 sm:hidden">
+            <a href="/" class="w-full text-center py-2 hover:bg-gray-700">Inicio</a>
+            <a href="/servicios.html" class="w-full text-center py-2 hover:bg-gray-700">Servicios</a>
+        </nav>
+    </header>
+
+
+    <section class="bg-[url(https://static.vecteezy.com/system/resources/thumbnails/022/576/372/small/image-of-wooden-table-in-front-of-abstract-blurred-background-of-resturant-lights-wood-table-top-on-blur-of-lighting-in-night-cafe-restaurant-background-selective-focus-generative-ai-photo.jpg)] bg-cover bg-center bg-fixed flex-grow py-10">
+        <main class="container mx-auto p-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="relative bg-white p-7 rounded-full shadow-lg text-center group overflow-hidden flex flex-col items-center justify-center w-60 h-60 mx-auto">
+                    <img src="./img/pizza.png" class="w-20 mb-4 transition-transform duration-300 group-hover:scale-110" alt="Mesa">
+                    <h3 class="text-xl font-semibold text-brown-800">Atención a la Mesa</h3>
+                    <p class="text-gray-700 mt-2 text-sm">
+                        Disfruta de nuestra comida sin necesidad de levantarte de tu mesa, te atenderemos con todo gusto.
+                    </p>
+                </div>
+
+                <div class="relative bg-white p-9 rounded-full shadow-lg text-center group overflow-hidden flex flex-col items-center justify-center w-60 h-60 mx-auto">
+                    <img src="./img/delivery.png" class="w-20 mb-4 transition-transform duration-300 group-hover:scale-110" alt="Delivery">
+                    <h3 class="text-xl font-semibold text-brown-800">Delivery</h3>
+                    <p class="text-gray-700 mt-2 text-sm">
+                        ¿No tienes tiempo para hacernos una visita? No te preocupes, nosotros llevamos la comida hasta tu casa.
+                    </p>
+                </div>
+
+                <div class="relative bg-white p-7 rounded-full shadow-lg text-center group overflow-hidden flex flex-col items-center justify-center w-60 h-60 mx-auto">
+                    <img src="./img/reservar.png" class="w-20 mb-4 transition-transform duration-300 group-hover:scale-110" alt="Reservaciones">
+                    <h3 class="text-xl font-semibold text-brown-800">Reservaciones</h3>
+                    <p class="text-gray-700 mt-2 text-sm">
+                        Reserva una mesa para tu familia o pareja y disfruta de nuestra comida.
+                    </p>
+                </div>
+
+                <div class="relative bg-white p-7 rounded-full shadow-lg text-center group overflow-hidden flex flex-col items-center justify-center w-60 h-60 mx-auto">
+                    <img src="./img/coctel.png" class="w-20 mb-4 transition-transform duration-300 group-hover:scale-110" alt="Eventos">
+                    <h3 class="text-xl font-semibold text-brown-800">Bar y Coctelería</h3>
+                    <p class="text-gray-700 mt-2 text-sm">
+                        Disfruta de todo tipo de bebidas en nuestro Bar y Coctelería.
+                    </p>
+                </div>
+
+                <div class="relative bg-white p-9 rounded-full shadow-lg text-center group overflow-hidden flex flex-col items-center justify-center w-60 h-60 mx-auto">
+                    <img src="./img/catering.png" class="w-20 mb-4 transition-transform duration-300 group-hover:scale-110" alt="Catering">
+                    <h3 class="text-xl font-semibold text-brown-800">Catering</h3>
+                    <p class="text-gray-700 mt-2 text-sm">
+                        Ideales para ofrecerte menús personalizados para tus eventos, fiestas o reuniones.
+                    </p>
+                </div>
+
+                <div class="relative bg-white p-7 rounded-full shadow-lg text-center group overflow-hidden flex flex-col items-center justify-center w-60 h-60 mx-auto">
+                    <img src="./img/wifi.png" class="w-20 mb-4 transition-transform duration-300 group-hover:scale-110" alt="WiFi">
+                    <h3 class="text-xl font-semibold text-brown-800">Wi-Fi Gratis</h3>
+                    <p class="text-gray-700 mt-2 text-sm">
+                        Wi-Fi gratuito para nuestros queridos clientes.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <footer class="fixed bottom-0 w-full bg-black text-white text-center p-4">
+        &copy; 2025 Gus Gus's Restaurant. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
+

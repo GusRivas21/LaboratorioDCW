@@ -7,14 +7,23 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-red-600: oklch(0.577 0.245 27.325);
     --color-orange-50: oklch(0.98 0.016 73.684);
     --color-orange-200: oklch(0.901 0.076 70.697);
+    --color-orange-600: oklch(0.646 0.222 41.116);
     --color-orange-700: oklch(0.553 0.195 38.402);
     --color-amber-50: oklch(0.987 0.022 95.277);
     --color-yellow-400: oklch(0.852 0.199 91.936);
     --color-yellow-600: oklch(0.681 0.162 75.834);
+    --color-cyan-900: oklch(0.398 0.07 227.392);
+    --color-blue-400: oklch(0.707 0.165 254.624);
+    --color-blue-500: oklch(0.623 0.214 259.815);
+    --color-blue-600: oklch(0.546 0.245 262.881);
+    --color-indigo-950: oklch(0.257 0.09 281.288);
+    --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-300: oklch(0.872 0.01 258.338);
     --color-gray-400: oklch(0.707 0.022 261.325);
+    --color-gray-500: oklch(0.551 0.027 264.364);
     --color-gray-600: oklch(0.446 0.03 256.802);
     --color-gray-700: oklch(0.373 0.034 259.733);
     --color-gray-800: oklch(0.278 0.033 256.848);
@@ -22,6 +31,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-md: 28rem;
     --container-lg: 32rem;
     --container-2xl: 42rem;
     --text-sm: 0.875rem;
@@ -391,11 +401,17 @@
       max-width: 96rem !important;
     }
   }
+  .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
+  }
   .mx-auto {
     margin-inline: auto;
   }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -514,6 +530,9 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-30 {
+    height: calc(var(--spacing) * 30);
+  }
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
@@ -522,6 +541,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .max-h-28 {
+    max-height: calc(var(--spacing) * 28);
   }
   .max-h-none {
     max-height: none;
@@ -555,6 +577,9 @@
   }
   .max-w-lg {
     max-width: var(--container-lg);
+  }
+  .max-w-md {
+    max-width: var(--container-md);
   }
   .max-w-none {
     max-width: none;
@@ -1202,6 +1227,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-r-indigo-950 {
+    border-right-color: var(--color-indigo-950);
+  }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
   }
@@ -1220,8 +1248,20 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
+  .bg-cyan-900 {
+    background-color: var(--color-cyan-900);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
   .bg-gray-400 {
     background-color: var(--color-gray-400);
+  }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
   }
   .bg-gray-600 {
     background-color: var(--color-gray-600);
@@ -1231,6 +1271,9 @@
   }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
+  }
+  .bg-orange-600 {
+    background-color: var(--color-orange-600);
   }
   .bg-orange-700 {
     background-color: var(--color-orange-700);
@@ -1259,8 +1302,26 @@
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'https\:\/\/i\.pinimg\.com\/736x\/46\/23\/3f\/46233f969bbfe40b5a8f5fe321e63f37\.jpg\'\)\] {
+    background-image: url('https://i.pinimg.com/736x/46/23/3f/46233f969bbfe40b5a8f5fe321e63f37.jpg');
+  }
+  .bg-\[url\(\'https\:\/\/i\.pinimg\.com\/originals\/78\/b0\/a5\/78b0a5446798825b4bbb293fbc7316c1\.png\'\)\] {
+    background-image: url('https://i.pinimg.com/originals/78/b0/a5/78b0a5446798825b4bbb293fbc7316c1.png');
+  }
+  .bg-\[url\(\'https\:\/\/media\.istockphoto\.com\/id\/1227415751\/es\/foto\/mesa-completa-de-comidas-italianas-en-platos-pizza-pasta-ravioles-carpaccio-ensalada-caprese-y\.jpg\?s\=612x612\&w\=0\&k\=20\&c\=kr9K-KmsmpPO6Vysfb1o8ETCLTx-UCKiYOqCP0bIU5g\=\'\)\] {
+    background-image: url('https://media.istockphoto.com/id/1227415751/es/foto/mesa-completa-de-comidas-italianas-en-platos-pizza-pasta-ravioles-carpaccio-ensalada-caprese-y.jpg?s=612x612&w=0&k=20&c=kr9K-KmsmpPO6Vysfb1o8ETCLTx-UCKiYOqCP0bIU5g=');
+  }
   .bg-\[url\(https\:\/\/i\.pinimg\.com\/736x\/28\/11\/36\/2811365afce8ee1a593f55853bc70c85\.jpg\)\] {
     background-image: url(https://i.pinimg.com/736x/28/11/36/2811365afce8ee1a593f55853bc70c85.jpg);
+  }
+  .bg-\[url\(https\:\/\/i\.pinimg\.com\/736x\/46\/23\/3f\/46233f969bbfe40b5a8f5fe321e63f37\.jpg\)\] {
+    background-image: url(https://i.pinimg.com/736x/46/23/3f/46233f969bbfe40b5a8f5fe321e63f37.jpg);
+  }
+  .bg-\[url\(https\:\/\/i\.pinimg\.com\/736x\/be\/8c\/c9\/be8cc91ca24dea985ec394dfd8e5ff74\.jpg\)\] {
+    background-image: url(https://i.pinimg.com/736x/be/8c/c9/be8cc91ca24dea985ec394dfd8e5ff74.jpg);
   }
   .bg-\[url\(https\:\/\/static\.vecteezy\.com\/system\/resources\/thumbnails\/022\/576\/372\/small\/image-of-wooden-table-in-front-of-abstract-blurred-background-of-resturant-lights-wood-table-top-on-blur-of-lighting-in-night-cafe-restaurant-background-selective-focus-generative-ai-photo\.jpg\)\] {
     background-image: url(https://static.vecteezy.com/system/resources/thumbnails/022/576/372/small/image-of-wooden-table-in-front-of-abstract-blurred-background-of-resturant-lights-wood-table-top-on-blur-of-lighting-in-night-cafe-restaurant-background-selective-focus-generative-ai-photo.jpg);
@@ -1639,6 +1700,9 @@
   .text-amber-50 {
     color: var(--color-amber-50);
   }
+  .text-blue-500 {
+    color: var(--color-blue-500);
+  }
   .text-gray-600 {
     color: var(--color-gray-600);
   }
@@ -1650,6 +1714,9 @@
   }
   .text-orange-50 {
     color: var(--color-orange-50);
+  }
+  .text-red-600 {
+    color: var(--color-red-600);
   }
   .text-white {
     color: var(--color-white);
@@ -2139,6 +2206,13 @@
       }
     }
   }
+  .hover\:bg-blue-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-600);
+      }
+    }
+  }
   .hover\:bg-gray-700 {
     &:hover {
       @media (hover: hover) {
@@ -2160,10 +2234,28 @@
       }
     }
   }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
   .focus\:ring {
     &:focus {
       --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-2 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-blue-400 {
+    &:focus {
+      --tw-ring-color: var(--color-blue-400);
     }
   }
   .focus\:ring-orange-200 {
